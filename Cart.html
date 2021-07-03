@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cart - Our_Store</title>
+	<link rel="stylesheet" type="text/css" href="Style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+</head>
+<body>
+	<div class="Page-4">
+		<div class="container">
+			<div class="navbar">
+				<div class="logo">
+					<a href="Home.html"><img src="images/logo.png" width="60px"></a>
+				</div>
+				<nav>
+					<ul id="MenuItems">
+						<li><a href="Home.html">Home</a></li>
+						<li><a href="Product.html">Products</a></li>
+						<li><a href="">About</a></li>
+						<li><a href="">Contact</a></li>
+						<li><a href="Account.html">Acoount</a></li>
+					</ul>
+				</nav>
+				<a href="Cart.html"><img src="images/shopping-cart.png" width="30px"></a>
+				<img src="images/menu.png" class="menu" onclick="menutoggle()">
+			</div>
+		</div>
+
+
+		<!-------Cart items Details-------->
+
+		<div class="small-container cart-page">
+			<table>
+				<tr>
+					<th>Product</th>
+					<th>Quantity</th>
+					<th>SubTotal</th>
+				</tr>
+				<tr>
+					<td>
+						<div class="cart-info">
+							<img src="images/gal1.jpg">
+							<div>
+								<p>Men_T-Shirt</p>
+								<small>$50.00</small>
+								<br>
+								<a href="">Remove</a>
+							</div>
+						</div>
+					</td>
+					<td><input type="number" value="1"></td>
+					<td>$50.00</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="cart-info">
+							<img src="images/product4.jpg">
+							<div>
+								<p>Half_Sleeve-Shirt</p>
+								<small>$15.00</small>
+								<br>
+								<a href="">Remove</a>
+							</div>
+						</div>
+					</td>
+					<td><input type="number" value="1"></td>
+					<td>$15.00</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="cart-info">
+							<img src="images/product2.jpg">
+							<div>
+								<p>Black_Jeans</p>
+								<small>$30.00</small>
+								<br>
+								<a href="">Remove</a>
+							</div>
+						</div>
+					</td>
+					<td><input type="number" value="1"></td>
+					<td>$30.00</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="cart-info">
+							<img src="images/product3.jpg">
+							<div>
+								<p>White_Canvas</p>
+								<small>$45.00</small>
+								<br>
+								<a href="">Remove</a>
+							</div>
+						</div>
+					</td>
+					<td><input type="number" value="1"></td>
+					<td>$45.00</td>
+				</tr>
+			</table>
+
+			<div class="Total-price">
+				<table>
+					<tr>
+						<td>Subtotal</td>
+						<td>$140.00</td>
+					</tr>
+					<tr>
+						<td>Tax</td>
+						<td>$20.00</td>
+					</tr>
+					<tr>
+						<td>Total</td>
+						<td>$160.00</td>
+					</tr>
+				</table>
+			</div>
+
+		</div>
+
+
+		<!-------Footer------->
+
+		<div class="Footer">
+			<div class="small-container">
+				<div class="row">
+					<div class="footer-col-1">
+						<h3>Download Our App</h3>
+						<p>Download App for Android and IOS.</p>
+						<div class="app-logo">
+							<img src="images/app-logo.png">
+						</div>		
+					</div>
+					<div class="footer-col-2">
+						<img src="images/our-store.png" width="150px">
+						<p>Our purpose is give the best outlook and quality product.</p>
+					</div>
+					<div class="footer-col-3">
+						<h3>Useful Links</h3>
+						<ul>
+							<li>Coupons</li>
+							<li>Blog Post</li>
+							<li>Return Policy</li>
+							<li>Join Affiliate</li>
+						</ul>
+					</div>
+					<div class="footer-col-4">
+						<h3>Follow Us</h3>
+						<ul>
+							<li>Facebook</li>
+							<li>Youtube</li>
+							<li>Twitter</li>
+							<li>Instagram</li>
+						</ul>
+					</div>
+				</div>
+				<hr>
+				<p class="Copyright">Copyright 2021 - SFP</p>
+			</div>
+		</div>
+
+		<!-------JS For Toggle Menu-------->
+
+
+		<script>
+
+			var MenuItems = document.getElementById("MenuItems")
+
+			MenuItems.style.maxHeight = "0px";
+
+			function menutoggle(){
+				if(MenuItems.style.maxHeight == "0px")
+				{
+					MenuItems.style.maxHeight = "200px"
+				}
+				else
+				{
+					MenuItems.style.maxHeight = "0px"
+				}
+			}
+		</script>
+
+	</div>
+
+</body>
+</html>
+
+
