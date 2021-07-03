@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Product-Details - Our_Store</title>
 	<link rel="stylesheet" type="text/css" href="Style.css">
-	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" type="text/css"
+		href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
+
 <body>
 	<div class="Page-3">
 		<div class="container">
 			<div class="navbar">
 				<div class="logo">
-					<a href="Home.html"><img src="images/logo.png" width="60px"></a>
+					<a href="index.html"><img src="images/logo.png" width="60px"></a>
 				</div>
 				<nav>
 					<ul id="MenuItems">
-						<li><a href="Home.html">Home</a></li>
+						<li><a href="index.html">Home</a></li>
 						<li><a href="Product.html">Products</a></li>
 						<li><a href="">About</a></li>
 						<li><a href="">Contact</a></li>
@@ -38,16 +42,13 @@
 
 					<div class="small-img-row">
 						<div class="small-img-col">
-							<img src="images/gal1.jpg" height="100px"
-							class="Small-Img">
+							<img src="images/gal1.jpg" height="100px" class="Small-Img">
 						</div>
 						<div class="small-img-col">
-							<img src="images/gal2.jpg" height="100px"
-							class="Small-Img">
+							<img src="images/gal2.jpg" height="100px" class="Small-Img">
 						</div>
 						<div class="small-img-col img2">
-							<img src="images/gal3.jpg" height="100px"
-							class="Small-Img">
+							<img src="images/gal3.jpg" height="100px" class="Small-Img">
 						</div>
 					</div>
 				</div>
@@ -58,7 +59,8 @@
 					<select>
 						<option>Select Size</option>
 						<option>XXL</option>
-						<option>XL</option>		<option>Large</option>
+						<option>XL</option>
+						<option>Large</option>
 						<option>Medium</option>
 						<option>Small</option>
 					</select>
@@ -66,7 +68,7 @@
 					<a href="" class="btn">Add To Cart</a>
 					<h3>Product Details <i class="fa fa-indent"></i></h3>
 					<br>
-					<p>Give you a new Look in Summer By an amazing well-fitting Men T-Shirt.</p>	
+					<p>Give you a new Look in Summer By an amazing well-fitting Men T-Shirt.</p>
 				</div>
 			</div>
 		</div>
@@ -147,7 +149,7 @@
 						<p>Download App for Android and IOS.</p>
 						<div class="app-logo">
 							<img src="images/app-logo.png">
-						</div>		
+						</div>
 					</div>
 					<div class="footer-col-2">
 						<img src="images/our-store.png" width="150px">
@@ -186,13 +188,11 @@
 
 			MenuItems.style.maxHeight = "0px";
 
-			function menutoggle(){
-				if(MenuItems.style.maxHeight == "0px")
-				{
+			function menutoggle() {
+				if (MenuItems.style.maxHeight == "0px") {
 					MenuItems.style.maxHeight = "200px"
 				}
-				else
-				{
+				else {
 					MenuItems.style.maxHeight = "0px"
 				}
 			}
@@ -206,16 +206,13 @@
 
 			var SmallImg = document.getElementsByClassName("Small-Img");
 
-			SmallImg[0].onclick = function()
-			{
+			SmallImg[0].onclick = function () {
 				ProductImg.src = SmallImg[0].src;
 			}
-			SmallImg[1].onclick = function()
-			{
+			SmallImg[1].onclick = function () {
 				ProductImg.src = SmallImg[1].src;
 			}
-			SmallImg[2].onclick = function()
-			{
+			SmallImg[2].onclick = function () {
 				ProductImg.src = SmallImg[2].src;
 			}
 
@@ -223,6 +220,5 @@
 	</div>
 
 </body>
+
 </html>
-
-
